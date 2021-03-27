@@ -7,8 +7,7 @@
   </head>
 
   <body>
-
-    <nav id="menu">
+    <div id="menu">
       <a href="#about" class="btn">About Me</a>
       <a href="#photos" class="btn">My Photos</a>
       <a href="#playlist" class="btn">My Playlist</a>
@@ -16,9 +15,10 @@
       <a href="#qrcoder" class="btn">QR code</a>
       <a href="#spa" class="btn">Q&A</a>
       <a href="#contact" class="btn">Contact Me</a>
-    </nav>
-
-    <div id = "about">
+    </div>
+    
+    <div id = "content" style = "width:600px; float:right; margin-right: 200px;">
+      <div id ="about">
         <br/>
         <br/>
         <br/>
@@ -41,68 +41,76 @@
         </p>
         <br/>
         <br/>
-    </div>
+      </div>
+
+      <div id = "photos">
+        <br/>
+        <br/>
+        <br/>
+          <h1>Photos of Paul</h1>
+        <br/>
+              <!-- Slideshow container -->
+        <div class="slideshow-container">
+  
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 7</div>
+            <img src="paul1.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 7</div>
+            <img src="paul2.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 7</div>
+            <img src="paul3.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 7</div>
+            <img src="paul4.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 7</div>
+            <img src="paul5.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <img src="paul6.jpg" style="width:100%">
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 7</div>
+            <img src="paul7.jpg" style="width:100%">
+          </div>
+  
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+  
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
     
-    <div id = "photos">
-      <br/>
-      <br/>
-      <br/>
-        <h1>Photos of Paul</h1>
-      <br/>
-            <!-- Slideshow container -->
-      <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 7</div>
-          <img src="paul1.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 7</div>
-          <img src="paul2.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 7</div>
-          <img src="paul3.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 7</div>
-          <img src="paul4.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">5 / 7</div>
-          <img src="paul5.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">6 / 7</div>
-          <img src="paul6.jpg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">7 / 7</div>
-          <img src="paul7.jpg" style="width:100%">
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <br>
 
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-            <br/>
     </div>
+        
+    
+    
 
     <section id="playlist" class="section">
     <br/>
@@ -219,36 +227,36 @@
     <br/>
     </section>
 
-    <script>
-      var slideIndex = 1;
-showSlides(slideIndex);
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-    </script>
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
     <!--
     <script type="text/javascript">
     $(function(){
