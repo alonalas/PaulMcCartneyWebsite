@@ -4,11 +4,12 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600;800&display=swap');
     </style>
+    
     <title>Paul McCartney</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="slideShow.css" />
+    <link rel="stylesheet" type="text/css" href="contact.css" />
 
-    
 
   </head>
 
@@ -176,63 +177,90 @@
         <br/>
   
       </div>
+
+      <div id="spa" class="section">
+        <br/>
+        <br/>
+        <br/>
+        <h1 style = "font-family: 'Dosis', sans-serif;">Q&A</h1>
+        <br/>
+        <h2 style = "font-family: 'Dosis', sans-serif;">Q1: Main diffrences between web1.0, web2.0 and web3.0:</h2>
+        <br/>
+        <p style= "font-family: 'Dosis', sans-serif; font-size: larger;">
+          1.  Compares to web 1 and web 3, which uses web crawlers- In web1 you dont have crawlers that search for web pages.<br/>
+          2.  Web1 pages are static, compared to web2 and web 3, which their pages are dynamic for changes. <br/>
+          3.  In web1 we can search online only with the specific URL we are looking for. <br/>
+                 In web2 we can serach online using a search engine (with tags).<br/>
+                 In web3 we can search online using a search engine (that uses a semantic search). <br/>
+        </p>
+        <br/>
+        <br/>
+        <h2 style = "font-family: 'Dosis', sans-serif;">Q2: The query "pills side effects":</h2>
+        <br/>
+        <p style= "font-family: 'Dosis', sans-serif; font-size: larger;">
+          In web1: we will have to use the specific URL of a site that talks about "pills side effects".<br/>
+          In web2: we can search the query. We will get sites that contains the tags "pills", "side", "effects" (not necessary together).<br/>
+          In web3: we can search the query. We will get sites that connect to the topic of the query (and not necessary contains the specific words) <br/>
+        </p>
+        <br/>
+      </div>
+
+      <div class="contact" class="section">
+        <form action="mailto:alonalas@post.bgu.ac.il"method="post" enctype="text/plain" >
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="row">
+              <h1>Contact us! &#128233;</h1>
+          </div>
+          
+          <div class="row input-container">
+              <div class="col-xs-12">
+                <div class="styled-input wide">
+                  <input type="text" required />
+                  <label>Name</label> 
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="styled-input">
+                  <input type="text" required />
+                  <label>Email</label> 
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="styled-input" style="float:right;">
+                  <input type="text" required />
+                  <label>Phone Number</label> 
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="styled-input wide">
+                  <textarea required></textarea>
+                  <label>Message</label>
+                </div>
+              </div>
+              <input type="submit" class="btn-lrg submit-btn" value="Send message">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+          </div>
+        </form> 
+      </div>
+      
+      
     </div>
         
-    
-    
-
-    
-
-    
-
-    
-
-    <section id="spa" class="section">
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    ans
-    <br/>
-    <br/>
-    <br/>
-    </section>
-
-    <section id="contact" class="section">
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    contact me
-    <br/>
-    <br/>
-    <br/>
-    </section>
-
+<script>
+  
+</script>
 <!--functions for photos-->
 <script>
   var slideIndex = 1;
@@ -265,25 +293,21 @@
   }
 </script>
 
-
-
-    <!--
-    <script type="text/javascript">
-    $(function(){
-      $("#nav a").click(function(e){
-        e.preventDefault();
-        $('html,body').scrollTo(this.hash,this.hash); 
-      });
+<!--was given by default-->
+<script type="text/javascript">
+  $(function(){
+    $("#nav a").click(function(e){
+      e.preventDefault();
+      $('html,body').scrollTo(this.hash,this.hash); 
     });
-    </script>
-    <script type="text/javascript">
-    $(document).scroll(function() {
-        $('#menu').toggle($(this).scrollTop()>1000)
-    });​
-    </script>
+  });
+</script>
 
+<script type="text/javascript">
+  $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+  });​
+</script>
 
-    -->
-    
   </body>
 </html>
